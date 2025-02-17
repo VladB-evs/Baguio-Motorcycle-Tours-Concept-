@@ -6,35 +6,20 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function BurnhamPark() {
   return (
     <article className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <div className="relative h-[60vh] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1628744876497-eb30460be9f6?q=80&w=2574')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed"
-          }}
-        />
-        <div className="absolute inset-0 flex flex-col justify-end pb-12">
-          <div className="container">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                Burnham Park
-              </h1>
-              <p className="text-xl text-white/90 max-w-2xl">
-                A historic urban park at the heart of Baguio City, offering recreational activities and natural beauty
-              </p>
-            </div>
-          </div>
+      <div className="container py-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Burnham Park
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            A historic urban park at the heart of Baguio City, offering recreational activities and natural beauty
+          </p>
         </div>
-      </div>
 
       {/* Quick Info */}
-      <div className="bg-muted/30">
+      <div className="bg-muted/30 mb-12">
         <div className="container py-6">
-          <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground max-w-3xl mx-auto">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
               <span>Best Time: 6 AM - 8 PM</span>
@@ -52,14 +37,16 @@ export default function BurnhamPark() {
       </div>
 
       {/* Content Section */}
-      <div className="container py-12">
+      <div className="container">
         <div className="max-w-[1200px] mx-auto">
-          <Link href="/#tours">
-            <Button variant="ghost" className="mb-8 hover:bg-primary/5">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Tours
-            </Button>
-          </Link>
+          <div className="text-center mb-8">
+            <Link href="/#tours">
+              <Button variant="ghost" className="hover:bg-primary/5">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Tours
+              </Button>
+            </Link>
+          </div>
 
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Content */}

@@ -1,110 +1,137 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Sun } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function CampJohnHay() {
   return (
     <article className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <div className="relative h-[50vh] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1605850868349-06b77c50903a?q=80&w=2574')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed"
-          }}
-        />
-        <div className="container h-full flex flex-col justify-end pb-12">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Camp John Hay
-            </h1>
-            <p className="text-lg md:text-xl text-white/90">
-              A historic retreat transformed into a premier mountain resort
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Content Section */}
       <div className="container py-12">
-        <Link href="/#tours">
-          <Button variant="ghost" className="mb-8 hover:bg-primary/5">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Tours
-          </Button>
-        </Link>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Camp John Hay
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            A historic retreat transformed into a premier mountain resort and recreation center
+          </p>
+        </div>
 
-        <div className="prose prose-lg max-w-none dark:prose-invert">
-          <div className="max-w-3xl">
-            <p className="lead">
-              Camp John Hay, originally established as a rest and recreation facility for American soldiers, has been transformed into one of Baguio's premier tourist destinations. This former US military base now serves as a luxurious mountain resort and recreation center.
-            </p>
-
-            <div className="my-12">
-              <h2 className="text-3xl font-bold mb-6">Historical Significance</h2>
-              <p>
-                Established in 1903, Camp John Hay played a significant role during World War II and served as a recuperation center for American soldiers. Today, it stands as a testament to Baguio's American colonial heritage while offering modern amenities and activities.
-              </p>
-            </div>
-
-            <div className="my-12">
-              <h2 className="text-3xl font-bold mb-6">Key Attractions</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Historical Core</h3>
-                  <p>Features the Bell House, History Trail, and the unique Cemetery of Negativism, each telling a part of the camp's rich history.</p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Pine Trees</h3>
-                  <p>Hundreds of towering Benguet pine trees create a serene atmosphere perfect for nature walks and meditation.</p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Eco-Trail</h3>
-                  <p>A well-maintained trail system perfect for nature walks, bird watching, and photography enthusiasts.</p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Golf Course</h3>
-                  <p>A world-class 18-hole golf course designed to challenge players while offering stunning mountain views.</p>
-                </div>
+        {/* Quick Info */}
+        <div className="bg-muted/30 mb-12">
+          <div className="container py-6">
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground max-w-3xl mx-auto">
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>Open: 24/7</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                <span>Located in Loakan Road</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Sun className="w-4 h-4" />
+                <span>Perfect for Day Tours</span>
               </div>
             </div>
-
-            <div className="my-12">
-              <h2 className="text-3xl font-bold mb-6">Available Activities</h2>
-              <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Historical tours of the military base
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Hiking and nature photography
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Dining at various restaurants
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Shopping at the Commissary
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Adventure activities at the Treetop Adventure
-                </li>
-              </ul>
-            </div>
           </div>
+        </div>
 
-          <div className="not-prose">
-            <Link href="/#tours">
-              <Button size="lg" className="mt-8">
-                Book a Tour Including Camp John Hay
-              </Button>
-            </Link>
+        {/* Content Section */}
+        <div className="container">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="text-center mb-8">
+              <Link href="/#tours">
+                <Button variant="ghost" className="hover:bg-primary/5">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back to Tours
+                </Button>
+              </Link>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-12">
+              {/* Main Content */}
+              <div className="lg:col-span-2 prose prose-lg prose-headings:text-foreground prose-p:text-muted-foreground dark:prose-invert">
+                <p className="lead text-foreground">
+                  Camp John Hay, originally established as a rest and recreation facility for American soldiers, has been transformed into one of Baguio's premier tourist destinations. This former US military base now serves as a luxurious mountain resort and recreation center.
+                </p>
+
+                <div className="my-12">
+                  <h2 className="text-3xl font-bold mb-6">Key Features</h2>
+                  <div className="grid sm:grid-cols-2 gap-6 not-prose">
+                    <Card>
+                      <CardContent className="pt-6">
+                        <h3 className="text-xl font-semibold mb-2">Historical Core</h3>
+                        <p className="text-muted-foreground">Features the Bell House, History Trail, and the unique Cemetery of Negativism, each telling a part of the camp's rich history.</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <h3 className="text-xl font-semibold mb-2">Pine Trees</h3>
+                        <p className="text-muted-foreground">Hundreds of towering Benguet pine trees create a serene atmosphere perfect for nature walks and meditation.</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <h3 className="text-xl font-semibold mb-2">Eco-Trail</h3>
+                        <p className="text-muted-foreground">A well-maintained trail system perfect for nature walks, bird watching, and photography enthusiasts.</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <h3 className="text-xl font-semibold mb-2">Golf Course</h3>
+                        <p className="text-muted-foreground">A world-class 18-hole golf course designed to challenge players while offering stunning mountain views.</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+
+                <div className="my-12">
+                  <h2 className="text-3xl font-bold mb-6">Best Time to Visit</h2>
+                  <p>
+                    Camp John Hay is accessible 24/7, but the best time to visit is during early morning or late afternoon when the weather is most pleasant. The pine-scented air is particularly refreshing during these hours, making it perfect for outdoor activities.
+                  </p>
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="lg:col-span-1">
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-semibold mb-4">Available Activities</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        Historical tours of the base
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        Hiking and nature photography
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        Golfing at the world-class course
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        Shopping at the Commissary
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        Treetop Adventure activities
+                      </li>
+                    </ul>
+
+                    <div className="mt-6 pt-6 border-t">
+                      <Link href="/#tours">
+                        <Button size="lg" className="w-full">
+                          Book a Tour Including Camp John Hay
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </div>

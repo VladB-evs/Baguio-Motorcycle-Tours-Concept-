@@ -11,7 +11,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-gradient-to-b from-primary/90 to-primary/40"
         style={{
-          backgroundImage: "url('https://images.pexels.com/photos/2379703/pexels-photo-2379703.jpeg')",
+          backgroundImage: "url('/images/baguio.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: -1
@@ -32,14 +32,6 @@ export default function Hero() {
             className="bg-white text-primary hover:bg-white/90"
           >
             View Tours
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-white text-white hover:bg-white/10"
-            onClick={scrollToTours}
-          >
-            Learn More
           </Button>
         </div>
         <ArrowDownCircle 

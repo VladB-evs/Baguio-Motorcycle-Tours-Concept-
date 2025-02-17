@@ -6,35 +6,20 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function MinesView() {
   return (
     <article className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <div className="relative h-[60vh] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1587547131116-a0655a526190?q=80&w=2574')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed"
-          }}
-        />
-        <div className="absolute inset-0 flex flex-col justify-end pb-12">
-          <div className="container">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                Mines View Park
-              </h1>
-              <p className="text-xl text-white/90 max-w-2xl">
-                A scenic overlook offering panoramic views of Benguet's mining town and mountain ranges
-              </p>
-            </div>
-          </div>
+      <div className="container py-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Mines View Park
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            A scenic overlook offering panoramic views of Benguet's mining town and mountain ranges
+          </p>
         </div>
-      </div>
 
       {/* Quick Info */}
-      <div className="bg-muted/30">
+      <div className="bg-muted/30 mb-12">
         <div className="container py-6">
-          <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground max-w-3xl mx-auto">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
               <span>Open: 6 AM - 6 PM</span>
@@ -52,14 +37,16 @@ export default function MinesView() {
       </div>
 
       {/* Content Section */}
-      <div className="container py-12">
+      <div className="container">
         <div className="max-w-[1200px] mx-auto">
-          <Link href="/#tours">
-            <Button variant="ghost" className="mb-8 hover:bg-primary/5">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Tours
-            </Button>
-          </Link>
+          <div className="text-center mb-8">
+            <Link href="/#tours">
+              <Button variant="ghost" className="hover:bg-primary/5">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Tours
+              </Button>
+            </Link>
+          </div>
 
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Content */}

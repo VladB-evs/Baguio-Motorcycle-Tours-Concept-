@@ -6,30 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function WrightPark() {
   return (
     <article className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <div className="relative h-[60vh] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1578524598679-67645a696a99?q=80&w=2574')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed"
-          }}
-        />
-        <div className="absolute inset-0 flex flex-col justify-end pb-12">
-          <div className="container">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                Wright Park
-              </h1>
-              <p className="text-xl text-white/90 max-w-2xl">
-                Baguio's famous horse-riding destination with scenic mountain views and colonial heritage
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="container py-12">
+        <div className="max-w-[800px] mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Wright Park
+          </h1>
+          <p className="text-xl text-muted-foreground mb-8">
+            Baguio's famous horse-riding destination with scenic mountain views and colonial heritage
+          </p>
 
       {/* Quick Info */}
       <div className="bg-muted/30">

@@ -5,37 +5,37 @@ import { Link } from "wouter";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1628744876497-eb30460be9f6?q=80&w=2574",
+    url: "/images/burnham.jpg",
     caption: "Burnham Park",
     description: "Iconic city center park with boating lagoon",
     link: "/attractions/burnham-park"
   },
   {
-    url: "https://images.unsplash.com/photo-1605850868349-06b77c50903a?q=80&w=2574",
+    url: "/images/camphay.jpg",
     caption: "Camp John Hay",
     description: "Former US military base turned leisure destination",
     link: "/attractions/camp-john-hay"
   },
   {
-    url: "https://images.unsplash.com/photo-1584544775678-0e08e597f368?q=80&w=2574",
+    url: "/images/session.jpg",
     caption: "Session Road",
     description: "The city's main thoroughfare and shopping district",
     link: "/attractions/session-road"
   },
   {
-    url: "https://images.unsplash.com/photo-1587547131116-a0655a526190?q=80&w=2574",
+    url: "/images/minesview.jpg",
     caption: "Mines View Park",
     description: "Panoramic views of the Benguet mountains",
     link: "/attractions/mines-view"
   },
   {
-    url: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2574",
+    url: "/images/cathedral.jpg",
     caption: "Baguio Cathedral",
     description: "Pink-colored church with twin spires",
     link: "/attractions/baguio-cathedral"
   },
   {
-    url: "https://images.unsplash.com/photo-1578524598679-67645a696a99?q=80&w=2574",
+    url: "/images/park.jpg",
     caption: "Wright Park",
     description: "Famous horse-riding destination",
     link: "/attractions/wright-park"
