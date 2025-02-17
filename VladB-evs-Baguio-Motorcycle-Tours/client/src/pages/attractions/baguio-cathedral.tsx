@@ -14,6 +14,7 @@ export default function BaguioCathedral() {
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           A historic pink-colored church with twin spires overlooking Session Road
         </p>
+      </div>
 
       {/* Quick Info */}
       <div className="max-w-2xl mx-auto mt-8 mb-12">

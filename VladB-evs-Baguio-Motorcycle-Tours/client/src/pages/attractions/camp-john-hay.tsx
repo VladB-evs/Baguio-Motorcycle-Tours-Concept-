@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function CampJohnHay() {
   return (
     <article className="min-h-screen bg-background">
-      <div className="container py-12">
+      <div className="container max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Camp John Hay
@@ -18,7 +18,7 @@ export default function CampJohnHay() {
 
         {/* Quick Info */}
         <div className="bg-muted/30 mb-12">
-          <div className="container py-6">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground max-w-3xl mx-auto">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
@@ -37,8 +37,8 @@ export default function CampJohnHay() {
         </div>
 
         {/* Content Section */}
-        <div className="container">
-          <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto">
             <div className="text-center mb-8">
               <Link href="/#tours">
                 <Button variant="ghost" className="hover:bg-primary/5">
