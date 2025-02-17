@@ -5,6 +5,6 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "cd VladB-evs-Baguio-Motorcycle-Tours && vite build",
-  "outputDirectory": "VladB-evs-Baguio-Motorcycle-Tours/dist/public"
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/public"
 }
